@@ -5,21 +5,25 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Open Sans";
+}
+
 body, p, ul, figure, button, 
-h1, h2, h3, h4, aside, select {
+h1, h2, h3, h4, aside, select, textarea {
   border: none;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans";
   list-style: none;
+  resize: none;
 }
 
-select {
+select, textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
-select:focus {
+select:focus, textarea:focus, button:focus, input:focus {
   outline: none;
 }
 

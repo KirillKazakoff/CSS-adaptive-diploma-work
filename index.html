@@ -450,18 +450,42 @@
 </footer>	
 
 <div class="popup">
-  <h2 class="aside-title popup-title">Ваш Фидбек</h2>
-  <form class="popup-form">
-    <label class="popup-question-group">
-      <span class="popup-form-question">Как часто вы заходите на сайт?</span>
-        <select class="popup-select">
-          <option selected><span class="text">Почти каждый день</span></option>
-          <option><span class="text">Раз в несколько дней</span></option>
-          <option><span class="text">Раз в несколько недель</span></option>
-          <option><span class="text">Несколько раз в год</span></option>
-        </select>
-    </label>
-  </form>
+  <div class="popup-container">
+    <h2 class="aside-title popup-title">Ваш Фидбек</h2>
+    <form class="popup-form">
+      <div class="popup-form-row">
+        <label class="popup-select-label">
+          <span class="popup-question">Как часто вы заходите на сайт?</span>
+            <select class="popup-select">
+              <option selected><span class="text">Почти каждый день</span></option>
+              <option><span class="text">Раз в несколько дней</span></option>
+              <option><span class="text">Раз в несколько недель</span></option>
+              <option><span class="text">Несколько раз в год</span></option>
+            </select>
+        </label>
+      </div>
+      <div class="popup-form-row">
+        <span class="popup-question">Вы подписаны на e-mail рассылку?</span>
+        <div class="popup-radio-group">
+          <label class="popup-radio-label">
+            <input type="radio" class="radio" name="radio-group">
+            <span class="radio-group-text">Да</span>
+          </label>
+          <label class="popup-radio-label">
+            <input type="radio" class="radio" name="radio-group">
+            <span class="radio-group-text">Нет</span>
+          </label>
+        </div>
+      </div>
+      <div class="popup-form-row">
+        <label for="" class="popup-textarea-label">
+          <span class="popup-question">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+          <textarea class="popup-textarea" placeholder="Может, больше рецептов?"></textarea>
+        </label>
+      </div>
+      <button class="button popup-form-button">Отправить</button>
+    </form>
+  </div>
 </div>
 
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
