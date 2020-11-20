@@ -4,7 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/DefaultStyle.css">
-  <link rel="stylesheet" href="css/Style.css">
+  <link rel="stylesheet" href="css/DesktopStyle.css">
+  <link rel="stylesheet" href="css/TabletStyle.css">
+  <link rel="stylesheet" href="css/MobileStyle.css">
   <link rel="stylesheet" href="css/Fonts.css">
 	<title>Document</title>
 </head>
@@ -12,10 +14,13 @@
 <header class="header">
   <div class="header-container">
     <div class="header-navigation">
-      <a href="/">
-        <img src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg" class="header-logo" alt="Логотип сайта" width="180">
+      <a class="header-logo-link" href="/">
+        <img src="svg/noemi-logo.svg" class="header-logo" alt="Логотип сайта" width="180">
       </a>
       <nav class="menu">
+        <button class="menu-button">
+          <span class="menu-button-label">Открыть меню</span>
+        </button>
         <ul class="menu-list">
           <li class="menu-list-item">
             <a class="menu-link" href="#0">Главная</a>
@@ -66,7 +71,7 @@
         </div>
       </article>
 
-      <article class="trand second-trand">
+      <article class="trand third-trand">
         <div class="trand-container">
           <ul class="tag-list">
             <li class="content-tag-item"><a href="#0" class="content-tag-link">lifestyle</a></li>
@@ -76,7 +81,7 @@
         </div>
       </article>
 
-      <article class="trand second-trand">
+      <article class="trand fourth-trand">
         <div class="trand-container">
           <ul class="tag-list">
             <li class="content-tag-item"><a href="#0" class="content-tag-link">food</a></li>
@@ -317,15 +322,15 @@
 
       <section class="tags">
         <h3 class="aside-title">Теги</h3>
-        <ul class="tag-list">
-          <li class="tag-item"><a href="#0">fashion</a></li>
-          <li class="tag-item"><a href="#0">music</a></li>
-          <li class="tag-item"><a href="#0">lifestyle</a></li>
-          <li class="tag-item"><a href="#0">art</a></li>
-          <li class="tag-item"><a href="#0">interior</a></li>
-          <li class="tag-item"><a href="#0">travel</a></li>
-          <li class="tag-item"><a href="#0">food</a></li>
-          <li class="tag-item"><a href="#0">health</a></li>
+        <ul class="tag-list together-tag-list">
+          <li class="inList-tag-item"><a href="#0">fashion</a></li>
+          <li class="inList-tag-item"><a href="#0">music</a></li>
+          <li class="inList-tag-item"><a href="#0">lifestyle</a></li>
+          <li class="inList-tag-item"><a href="#0">art</a></li>
+          <li class="inList-tag-item"><a href="#0">interior</a></li>
+          <li class="inList-tag-item"><a href="#0">travel</a></li>
+          <li class="inList-tag-item"><a href="#0">food</a></li>
+          <li class="inList-tag-item"><a href="#0">health</a></li>
         </ul>
       </section>
 
@@ -365,9 +370,12 @@
 
       <section class="products-section">
         <article class="product">
-          <figure class="product-media">
+          <picture class="product-media">
+            <source media="(min-width: 1200px)" srcset="images/shop-item-desk1.jpg">
+            <source media="(min-width: 641px)" srcset="images/shop-item-tablet1.jpg">
+            <source media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg">
             <img src="images/shop-item-desk1.jpg" class="product-img" alt="Фото DIY-подушки" width="380">
-          </figure>
+          </picture>
           <footer class="product-footer">
             <div class="product-description">
               <h3 class="title product-title">Подушки на диван</h3>
@@ -384,9 +392,12 @@
         </article>
 
         <article class="product">
-          <figure class="product-media">
+          <picture class="product-media">
+            <source media="(min-width: 1200px)" srcset="images/shop-item-desk2.jpg">
+            <source media="(min-width: 641px)" srcset="images/shop-item-tablet2.jpg">
+            <source media="(max-width: 640px)" srcset="images/shop-item-mobile2.jpg">
             <img src="images/shop-item-desk2.jpg" class="product-img" alt="Фото DIY-подушки" width="380">
-          </figure>
+          </picture>
           <footer class="product-footer">
             <div class="product-description">
               <h3 class="title product-title">Кукла «Зайчик»</h3>
@@ -402,9 +413,12 @@
         </article>
 
         <article class="product">
-          <figure class="product-media">
+          <picture class="product-media">
+            <source media="(min-width: 1200px)" srcset="images/shop-item-desk3.jpg">
+            <source media="(min-width: 641px)" srcset="images/shop-item-tablet3.jpg">
+            <source media="(max-width: 640px)" srcset="images/shop-item-mobile3.jpg">
             <img src="images/shop-item-desk3.jpg" class="product-img" alt="Фото DIY-подушки" width="380">
-          </figure>
+          </picture>
           <footer class="product-footer">
             <div class="product-description">
               <h3 class="title product-title">Шестиугольная рамка</h3>
