@@ -30,7 +30,6 @@
 
         justify-content: flex-end;
         align-items: center;
-        justify-content: end;
         flex: 1;
     }
 
@@ -56,7 +55,6 @@
 
     .header-description
     {
-        font-size: 40px;
         line-height: 55px;
 
         width: 87%;
@@ -104,7 +102,7 @@
     }
 
 
-    /*post*/
+/*post*/
     .post
     {
         flex-direction: column;
@@ -141,11 +139,11 @@
     .post-media
     {
         margin: 0;
+        width: 100%;
     }
 
-    .post-img
-    {
-        width: 100%;
+    .post-content {
+    	width: 100%;
     }
 
     .post-special
@@ -158,40 +156,51 @@
         margin-bottom: 35px;
     }
 
-    /*side-bar*/
+
+/*side-bar*/
     .aside-content
     {
         width: 37%;
     }
+	/*products-section*/
+	    .products-section
+	    {
+	        flex-wrap: wrap;
+	    }
 
-    /*products-section*/
-    .products-section
-    {
-        flex-wrap: wrap;
-    }
+	    .product
+	    {
+	        width: 49%;
+	    }
 
-    .product
-    {
-        width: 49%;
-    }
+	    .product:nth-of-type(n + 2)
+	    {
+	        margin: 0;
+	    }
 
-    .product:nth-of-type(n + 2)
-    {
-        margin: 0;
-    }
+	    .product:nth-of-type(even)
+	    {
+	        margin-left: 2%;
+	    }
 
-    .product:nth-of-type(even)
-    {
-        margin-left: 2%;
-    }
+	    .product-img
+	    {
+	        width: 85%;
+	    }
 
-    .product-img
-    {
-        width: 85%;
-    }
+/*popup*/
+	/*popup-radio*/
+	.radio-group-text::before {
+		width: 25px;
+		height: 25px;
+		background-size: 24px;
+	}
 
 
-    /*font-sizes*/
+/*font-sizes*/
+	.header-description {
+		font-size: 40px;
+	}
     .aside-title
     {
         font-size: 14px;
@@ -212,6 +221,10 @@
     {
         font-size: 17px;
     }
+    .popup-title  {
+    	font-size: 18px;
+    }
+
 }
 
 @media(min-width: 641px) and (max-width: 768px)
