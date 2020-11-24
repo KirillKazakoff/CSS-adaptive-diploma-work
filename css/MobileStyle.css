@@ -240,9 +240,17 @@
 
 /*popup*/
 	.popup-container {
-		top: 50px;
+		max-width: 360px;
 		width: 90%;
-		height: 90vmax;
+		height: 85vh;
+		top: 70px;
+	}
+
+	.popup-container::before {
+		width: 28px;
+		height: 28px;
+		background-size: 28px;
+		top: -35px;		
 	}
 
 	.popup-form {

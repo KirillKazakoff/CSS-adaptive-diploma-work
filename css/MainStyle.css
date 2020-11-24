@@ -813,7 +813,7 @@ placeholder
     display: block;
 
     width: 100%;
-    height: 100vh;
+    height: 100vmax;
 }
 
 .popup::before
@@ -839,7 +839,8 @@ placeholder
     left: 0;
 
     width: 390px;
-    height: 70vmax;
+    height: 70vh;
+    min-height: 600px;
     margin-right: auto;
     margin-left: auto;
     padding-top: 55px;
