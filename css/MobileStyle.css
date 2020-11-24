@@ -239,6 +239,9 @@
     }
 
 /*popup*/
+	.popup-container {
+		top: 70px;
+	}
 	/*popup-radio*/
 	.radio-group-text::before {
 		width: 25px;
