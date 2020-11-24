@@ -240,8 +240,15 @@
 
 /*popup*/
 	.popup-container {
-		top: 70px;
+		top: 50px;
+		width: 90%;
+		height: 90vmax;
 	}
+
+	.popup-form {
+		width: 280px;
+	}
+
 	/*popup-radio*/
 	.radio-group-text::before {
 		width: 25px;
