@@ -248,7 +248,7 @@
 
 	.popup-container::before {
 		width: 28px;
-		height: 28px;
+		height: 28px;-=
 		background-size: 28px;
 		top: -35px;		
 	}

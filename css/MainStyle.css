@@ -552,12 +552,14 @@ placeholder
     flex-wrap: wrap;
 }
 
+
 .together-tag-item
 {
     font-size: 12px;
     font-weight: 700;
 
-    display: table-cell;
+    display: flex;
+    align-items: center;
 
     height: 30px;
     padding-right: 13px;
@@ -810,7 +812,7 @@ placeholder
     top: 0;
     left: 0;
 
-    display: block;
+    display: none;
 
     width: 100%;
     height: 100vmax;
