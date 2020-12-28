@@ -31,7 +31,6 @@
 .header-container
 {
     position: relative;
-
     max-width: 1600px;
     margin-right: auto;
     margin-left: auto;
@@ -137,6 +136,17 @@
 section:nth-of-type(n + 2)
 {
     margin-top: 61px;
+}
+
+.visually-hidden
+{
+    display: block;
+    position: absolute;
+
+    clip: rect(1px, 1px, 1px, 1px);
+
+    width: 1px;
+    height: 1px;
 }
 
 .content-tag-link
@@ -509,16 +519,6 @@ placeholder
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 18px;
-}
-
-.visually-hidden
-{
-    position: absolute;
-
-    clip: rect(1px, 1px, 1px, 1px);
-
-    width: 1px;
-    height: 1px;
 }
 
 .submit-button
